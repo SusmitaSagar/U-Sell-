@@ -1,0 +1,177 @@
+.signup-page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+.signup-page-container .signup-page {
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    #f06666,
+    #f1bf73,
+    48%,
+    #ffffff,
+    48%,
+    #ffffff
+  );
+}
+.signup-page-container .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.signup-page-container .img-box img {
+  width: 65%;
+}
+.signup-page-container .signup-page .signup-form {
+  width: 50%;
+  padding: 40px;
+  position: relative;
+}
+.signup-page-container .signup-page .signup-form h2 {
+  color: rgb(128, 122, 119);
+}
+.signup-page-container .signup-page .signup-form form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.signup-page-container .signup-page .signup-form .full-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.signup-page-container .signup-page .signup-form .full-name input {
+  font-size: 12px;
+}
+.signup-page-container .signup-page .signup-form input {
+  width: 100%;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px 3px;
+  background: transparent;
+  border-bottom: 3px solid rgb(204, 211, 218);
+}
+.signup-page-container .signup-page .signup-form input:focus {
+  border-bottom: 4px solid #fc8a15;
+}
+.signup-page-container .signup-page .signup-form [type="submit"] {
+  /* width: 22%; */
+  border: none;
+  font-size: 14px;
+  align-self: center;
+  background-color: #429bf3;
+  color: whitesmoke;
+  border-radius: 35px;
+  padding: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 3px #8ac1f8;
+}
+.signup-page-container .signup-page .signup-form [type="submit"]:focus {
+  box-shadow: 0px 0px 0px 0px #8ac1f8;
+  border-bottom: none;
+}
+.signup-page-container .signup-page .signup-form .logo {
+  display: flex;
+  flex-direction: row;
+}
+.signup-page-container .signup-page .signup-form .logo p {
+  font-size: 22px;
+}
+.signup-page-container .signup-page .signup-form .logo p:nth-child(1) {
+  background: linear-gradient(245deg, #f8810a, #ffc78f, #f8810a);
+  color: white;
+}
+.signup-page-container .signup-page .signup-form .logo p:nth-child(2) {
+  color: #fc8a19;
+}
+.signup-page-container .signup-page .signup-form #welcome-signup {
+  position: absolute;
+  color: rgb(255, 249, 249);
+  padding: 8px 20px;
+  border-radius: 0px 24px 24px 0px;
+  top: 20px;
+  left: -22px;
+  font-size: 17px;
+  background: linear-gradient(145deg, #fc8a19, #f7c593, #fc8a19);
+}
+.signup-form .both-passwords {
+  display: flex;
+  gap: 10px;
+}
+.signup-form .retype-pass {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1px 3px; */
+  background: transparent;
+  /* border-bottom: 3px solid rgb(204, 211, 218) */
+  position: relative;
+}
+.signup-form .retype-pass i {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.retype-pass input {
+  width: 100%;
+}
+
+.signup-page-container .signup-page .signup-form select {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+  cursor: pointer;
+  border: 2px solid rgb(204, 211, 218);
+  border-radius: 5px;
+  background-color: #f8f8f8e8;
+}
+
+.signup-page-container .signup-page .signup-form option {
+  padding: 10px;
+}
+
+.signup-page-container .signup-page .signup-form .mobile-dept {
+  display: flex;
+  gap: 10px;
+}
+
+/* Custom File buttom */
+[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+[type="file"]::before {
+  content: "Upload Profile Pic";
+  position: relative;
+  color: white;
+  background-color: #4b6584;
+  left: 10px;
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  /* text-shadow: 1px 1px #fff; */
+  font-weight: 700;
+  font-size: 10pt;
+}
+[type="file"]:hover::before {
+  background-color: whitesmoke;
+  color: #4b6584;
+}
